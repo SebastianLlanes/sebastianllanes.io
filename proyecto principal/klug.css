@@ -63,6 +63,7 @@ header p {
     max-width: -webkit-fill-available;
 }
 .main-aside__coldcontainer {
+    height: 60px;
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -71,9 +72,14 @@ header p {
     margin-top: -4px;
     font-size: 1.2rem;
     font-weight: 300;
-    background-color: #ffffff;
-    background-image: linear-gradient(90deg, #ffffff 0%, #8BC6EC 50%, #9599E2 100%);
+    background-color: rgb(202, 221, 228);
+    /*background-color: #ffffff;
+    background-image: linear-gradient(90deg, #ffffff 0%, #8BC6EC 50%, #9599E2 100%);*/
 
+}
+.main-aside__coldcontainer:hover {
+    background-color: #ffffff;
+    background-image: linear-gradient(90deg, #ffffff 0%, #8BC6EC 50%, #9599E2 100%)
 }
 .main-aside__coldcontainer h2 {
     margin-left: 10px;
@@ -83,6 +89,7 @@ header p {
     margin-left: 10px;
 }
 .main-aside__hotcontainer {
+    height: 60px;
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -90,8 +97,13 @@ header p {
     align-items: center;
     font-size: 1.2rem;
     font-weight: 300;
+    background-color: rgb(202, 221, 228) ;
+    /*background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);*/
+}
+.main-aside__hotcontainer:hover {
     background-color: #FAD961;
-    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%)
 }
 .main-aside__hotcontainer p {
     margin-left: 24px;
@@ -118,13 +130,27 @@ footer img {
     height: 32px;
     
 }
+.footer-container_whatsapp {
+    width: 300px;
+    text-align: center;
+    background-color: #8BC6EC;
+}
+.footer-container_whatsapp:hover {
+    border: 1px solid var(--orange-red);
+    background-color: var(--grey);
+}
 .footer-whatsapp_button {
         background: none;
         font-family: 'Kanit';
         text-align: center;
         border: none;
 }
-.footer-whatsapp_button:hover {
+.footer-container_ubicacion {
+    width: 300px;
+    text-align: center;
+    background-color: #8BC6EC;
+}
+.footer-container_ubicacion:hover {
     border: 1px solid var(--orange-red);
     background-color: var(--grey);
 }
