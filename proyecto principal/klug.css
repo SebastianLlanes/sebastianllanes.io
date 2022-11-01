@@ -60,7 +60,7 @@ header p {
     width: 40px;
 }
 .main-container img {
-    max-width: -webkit-fill-available;
+    width: 100%;
 }
 .main-aside__coldcontainer {
     height: 60px;
@@ -76,6 +76,10 @@ header p {
     /*background-color: #ffffff;
     background-image: linear-gradient(90deg, #ffffff 0%, #8BC6EC 50%, #9599E2 100%);*/
 
+}
+.main-aside__coldcontainer img {
+    width: 32px;
+    height: 32px;
 }
 .main-aside__coldcontainer:hover {
     background-color: #ffffff;
@@ -120,7 +124,6 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 10px;
     font-size: 1.2rem;
     background-color: rgb(202, 221, 228);
 }
@@ -136,8 +139,8 @@ footer img {
     background-color: #8BC6EC;
 }
 .footer-container_whatsapp:hover {
-    border: 1px solid var(--orange-red);
-    background-color: var(--grey);
+    border: 5px solid #D6EAF8;
+    background-color:#D6DBDF ;
 }
 .footer-whatsapp_button {
         background: none;
@@ -151,6 +154,11 @@ footer img {
     background-color: #8BC6EC;
 }
 .footer-container_ubicacion:hover {
-    border: 1px solid var(--orange-red);
-    background-color: var(--grey);
+    border: 5px solid #D6EAF8;
+    background-color: #D6DBDF;
+}
+@media (min-width: 640px) {
+    .main-container img {
+        display: none;
+    }
 }
